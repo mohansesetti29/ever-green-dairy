@@ -390,7 +390,7 @@ const MilkFranchise = () => {
                     </section>
 
                     {/* Contact Section */}
-                    <section className="py-20 bg-white">
+                    <section id="contact" className="py-20 bg-white">
                         <div className="max-w-7xl mx-auto px-6">
                             <div className="text-center mb-12">
                                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
@@ -450,7 +450,10 @@ const MilkFranchise = () => {
                         <p>Pure Dairy reserves the right to cancel or refuse any order at our sole discretion.</p>
                     </PolicySection>
 
-                    <ShippingPolicy />
+                    {/* UPDATED: Wrapped ShippingPolicy */}
+                    <PolicySection id="shipping-policy" title="Shipping Policy">
+                        <ShippingPolicy />
+                    </PolicySection>
 
                     <PolicySection id="refunds-exchange" title="Refunds and Exchange Policy">
                         <p><strong>Exchange Policy: NO EXCHANGE.</strong> Due to the perishable nature of our products, we strictly adhere to a no-exchange policy once the product has been delivered and accepted.</p>
@@ -458,6 +461,7 @@ const MilkFranchise = () => {
                     </PolicySection>
 
 
+                    {/* UPDATED: Footer with new links */}
                     <footer className="bg-gray-900 text-white py-12">
                         <div className="max-w-7xl mx-auto px-6 text-center">
                             <div className="flex items-center justify-center gap-3 mb-4">
@@ -467,7 +471,11 @@ const MilkFranchise = () => {
                             <div className="flex justify-center space-x-6 text-sm mb-4">
                                 <a href="#privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
                                 <a href="#terms-and-conditions" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a>
+                                {/* NEW: Shipping Policy */}
+                                <a href="#shipping-policy" className="text-gray-400 hover:text-white transition-colors">Shipping Policy</a>
                                 <a href="#refunds-exchange" className="text-gray-400 hover:text-white transition-colors">Refund Policy</a>
+                                {/* NEW: Contact */}
+                                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a>
                             </div>
                             <p className="text-gray-400">
                                 Premium milk products franchise • Established 2020 | All Rights Reserved.
